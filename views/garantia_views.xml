@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Vista de formulario para Garantía de Producto -->
+    <record id="view_garantia_producto_form" model="ir.ui.view">
+        <field name="name">garantia.producto.form</field>
+        <field name="model">garantia.producto</field>
+        <field name="arch" type="xml">
+            <form string="Garantía de Producto">
+                <sheet>
+                    <group>
+                        <field name="number" string="Número de Garantía" readonly="1"/>
+                        <field name="customer_id" string="Cliente" />
+                        <field name="product_id" string="Producto" />
+                        <field name="purchase_date" string="Fecha de Compra" />
+                        <field name="warranty_date" string="Fecha de Vencimiento" />
+                        <field name="status" string="Estado" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vista de lista para Garantía de Producto -->
+    <record id="view_garantia_producto_tree" model="ir.ui.view">
+        <field name="name">garantia.producto.tree</field>
+        <field name="model">garantia.producto</field>
+        <field name="arch" type="xml">
+            <tree string="Garantías de Producto">
+                <field name="number" string="Número de Garantía" />
+                <field name="customer_id" string="Cliente" />
+                <field name="product_id" string="Producto" />
+                <field name="purchase_date" string="Fecha de Compra" />
+                <field name="warranty_date" string="Fecha de Vencimiento" />
+                <field name="status" string="Estado" />
+            </tree>
+        </field>
+    </record>
+
+    <!-- Acción para abrir la vista de lista y formulario -->
+    <record id="action_garantia_producto" model="ir.actions.act_window">
+        <field name="name">Garantías de Producto</field>
+        <field name="res_model">garantia.producto</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+    </record>
+
+    <!-- Menú para acceder a las Garantías de Producto -->
+    <menuitem id="menu_garantia_producto_root" name="Gestión de Garantías" />
+    <menuitem id="menu_garantia_producto" name="Garantías" parent="menu_garantia_producto_root" action="action_garantia_producto" />
+</odoo>
