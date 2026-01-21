@@ -14,8 +14,9 @@
     'data': [
         'views/garantia_views.xml',
         'security/ir.model.access.csv',
+        'views/garantia_views.xml',
     ],
-    'icon': '/garantias/static/description/icon54.png',
+    'icon': 'garantias/static/description/icon54.png',
     'installable': True,
-    'application': True
+    'application': True,
     }

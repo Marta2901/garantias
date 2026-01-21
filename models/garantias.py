@@ -1,6 +1,6 @@
 # garantias/models/garantias.py
 from odoo import models, fields, api
-from datetime impoort timedelta
+from datetime import timedelta
 
 class GarantiaProducto(models.Model):
     _name = 'garantia.producto'
@@ -10,8 +10,8 @@ class GarantiaProducto(models.Model):
     customer_id = fields.Many2one('res.partner', string='Cliente', required=True)
     product_id = fields.Many2one('product.product', string='Producto', required=True)
     purchase_date = fields.Date(string='Fecha de Compra', required=True)
-    warranty_date = fields.Date(string= 'Fecha de Venncimiento', compute='_compute_warranty_date', store=True)
-    status = fields.Selection([('valid', 'Válida'), ('eexpired', 'Expirada')],
+    warranty_date = fields.Date(string= 'Fecha de Vencimiento', compute='_compute_warranty_date', store=True)
+    status = fields.Selection([('valid', 'Válida'), ('expired', 'Expirada')],
     string='Estado', compute='_compute_status', store=True)
 
     @api.model
