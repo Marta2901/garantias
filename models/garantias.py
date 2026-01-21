@@ -1,6 +1,6 @@
 # garantias/models/garantias.py
 from odoo import models, fields, api
-from datetime impoort tiemdata
+from datetime impoort timedelta
 
 class GarantiaProducto(models.Model):
     _name = 'garantia.producto'

@@ -17,5 +17,5 @@
     ],
     'icon': '/garantias/static/description/icon54.png',
     'installable': True,
-    'application': True,
+    'application': True
     }
