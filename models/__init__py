@@ -1,1 +1,2 @@
+#garantias/models
 from . import garantia
