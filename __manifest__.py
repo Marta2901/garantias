@@ -12,7 +12,6 @@
     'author': 'Marta Enriquez',
     'depends': ['base', 'product', 'sale'], 
     'data': [
-        'views/garantia_views.xml',
         'security/ir.model.access.csv',
         'views/garantia_views.xml',
     ],
