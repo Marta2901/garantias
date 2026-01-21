@@ -1,4 +1,4 @@
-# garantias/models/garantias.py
+# garantias/models/garantia.py
 from odoo import models, fields, api
 from datetime import timedelta
 
