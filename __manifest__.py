@@ -10,7 +10,7 @@
     automáticamente el estado de la garantía.
     """,
     'author': 'Marta Enriquez',
-    'depends': ['base', 'sale', 'contacts'], # Requiere módulos base, ventas y contactos
+    'depends': ['base', 'product', 'sale'], 
     'data': [
         'views/garantia_views.xml',
         'security/ir.model.access.csv',
